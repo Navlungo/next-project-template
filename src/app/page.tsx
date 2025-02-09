@@ -10,18 +10,29 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start w-full max-w-4xl">
-        <div className="text-center w-full mb-12">
-          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
-            Navlungo Template Demo
-          </h1>
-          <p className="text-xl text-muted-foreground leading-7">
-            A showcase of the available components and their styling
-          </p>
+        <div className="flex flex-col items-center gap-8 w-full">
+          <Image
+            src="/images/navlungo-branding/logo-blue.webp"
+            alt="Navlungo Logo"
+            width={200}
+            height={50}
+            priority
+            className="dark:invert"
+          />
+          <div className="text-center w-full mb-12">
+            <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl mb-6">
+              Template Demo
+            </h1>
+            <p className="text-xl text-muted-foreground leading-7">
+              A showcase of the available components and their styling
+            </p>
+          </div>
         </div>
 
         {/* Sample Table */}
