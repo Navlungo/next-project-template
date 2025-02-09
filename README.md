@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Name
+
+Brief description of what this project does and its purpose within Navlungo's ecosystem.
+
+## Tech Stack
+
+- Next.js 15+ (App Router)
+- Tailwind CSS
+- shadcn/ui (New York style)
+- TypeScript
+
+## Prerequisites
+
+List of required software and tools:
+
+```bash
+Node.js >= 18.x
+npm >= 9.x
+```
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+```bash
+git clone [repository-url]
+cd [project-name]
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up environment variables:
+
+```bash
+cp .env.example .env.local
+```
+
+Edit `.env.local` with your configuration.
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+├── app/                # Next.js 13+ app directory
+├── components/         # Reusable components
+│   └── ui/            # shadcn/ui components
+├── lib/               # Utility functions and shared logic
+├── public/            # Static assets
+└── styles/            # Global styles and CSS modules
+```
 
-## Learn More
+## UI Components
 
-To learn more about Next.js, take a look at the following resources:
+We use [shadcn/ui](https://ui.shadcn.com/) for our component library, configured with the New York style. To add new components:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npx shadcn-ui@latest add [component-name]
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Available Scripts
 
-## Deploy on Vercel
+- `npm run dev` - Starts development server
+- `npm run build` - Creates production build
+- `npm run start` - Runs production server
+- `npm run lint` - Runs ESLint
+- `npm run test` - Runs test suite
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Additional Resources
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Internal documentation: [Link to Navlungo wiki]
+- API documentation: [Link to API docs]
+- Design system: [Link to design system]
+
+## Support
+
+For internal support:
+
+- Slack channel: `#project-support`
+- Email: `team@navlungo.com`
+
+## License
+
+Navlungo © 2025
